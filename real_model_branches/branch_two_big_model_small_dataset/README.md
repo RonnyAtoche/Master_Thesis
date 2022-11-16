@@ -1,0 +1,2 @@
+- dropout from 0.5 to 0.2
+- x = MaxPooling2D(pool_size=(2, 2), strides=(1, 1), padding='same')(x)
