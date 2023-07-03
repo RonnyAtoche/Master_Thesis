@@ -1,0 +1,114 @@
+2022-12-12 16:16:36.554128: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2022-12-12 16:16:58.821184: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2022-12-12 16:16:58.920070: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 0 with properties: 
+pciBusID: 0000:03:00.0 name: Tesla K40m computeCapability: 3.5
+coreClock: 0.745GHz coreCount: 15 deviceMemorySize: 11.17GiB deviceMemoryBandwidth: 268.58GiB/s
+2022-12-12 16:16:58.921237: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 1 with properties: 
+pciBusID: 0000:82:00.0 name: Tesla K40m computeCapability: 3.5
+coreClock: 0.745GHz coreCount: 15 deviceMemorySize: 11.17GiB deviceMemoryBandwidth: 268.58GiB/s
+2022-12-12 16:16:58.921305: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2022-12-12 16:16:58.928755: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2022-12-12 16:16:58.933893: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2022-12-12 16:16:58.936415: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2022-12-12 16:16:58.942101: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2022-12-12 16:16:58.945945: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2022-12-12 16:16:58.954111: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2022-12-12 16:16:58.958350: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1697] Adding visible gpu devices: 0, 1
+2022-12-12 16:17:05.510446: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 0 with properties: 
+pciBusID: 0000:03:00.0 name: Tesla K40m computeCapability: 3.5
+coreClock: 0.745GHz coreCount: 15 deviceMemorySize: 11.17GiB deviceMemoryBandwidth: 268.58GiB/s
+2022-12-12 16:17:05.511703: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 1 with properties: 
+pciBusID: 0000:82:00.0 name: Tesla K40m computeCapability: 3.5
+coreClock: 0.745GHz coreCount: 15 deviceMemorySize: 11.17GiB deviceMemoryBandwidth: 268.58GiB/s
+2022-12-12 16:17:05.511776: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2022-12-12 16:17:05.511858: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2022-12-12 16:17:05.511913: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2022-12-12 16:17:05.511967: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2022-12-12 16:17:05.512021: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2022-12-12 16:17:05.512074: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2022-12-12 16:17:05.512128: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2022-12-12 16:17:05.516618: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1697] Adding visible gpu devices: 0, 1
+2022-12-12 16:17:05.531376: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2022-12-12 16:17:15.395462: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1096] Device interconnect StreamExecutor with strength 1 edge matrix:
+2022-12-12 16:17:15.395581: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102]      0 1 
+2022-12-12 16:17:15.395605: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] 0:   N N 
+2022-12-12 16:17:15.395635: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] 1:   N N 
+2022-12-12 16:17:15.406652: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1241] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10749 MB memory) -> physical GPU (device: 0, name: Tesla K40m, pci bus id: 0000:03:00.0, compute capability: 3.5)
+2022-12-12 16:17:15.440777: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1241] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 10749 MB memory) -> physical GPU (device: 1, name: Tesla K40m, pci bus id: 0000:82:00.0, compute capability: 3.5)
+2022-12-12 16:17:15.443480: I tensorflow/core/common_runtime/process_util.cc:147] Creating new thread pool with default inter op setting: 12. Tune using inter_op_parallelism_threads for best performance.
+GPU Available:  [PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU'), PhysicalDevice(name='/physical_device:GPU:1', device_type='GPU')]
+Traceback (most recent call last):
+  File "/data/s2614855/Signal_to_Noise_Classification_two/predictions/snapnum_50_57/make_predictions.py", line 35, in <module>
+    as_supervised=True,
+  File "/data/s2614855/.envs/intro_project_venv/lib/python3.7/site-packages/tensorflow_datasets/core/logging/__init__.py", line 273, in decorator
+    return function(*args, **kwargs)
+  File "/data/s2614855/.envs/intro_project_venv/lib/python3.7/site-packages/tensorflow_datasets/core/load.py", line 590, in load
+    ds = dbuilder.as_dataset(**as_dataset_kwargs)
+  File "/data/s2614855/.envs/intro_project_venv/lib/python3.7/site-packages/tensorflow_datasets/core/logging/__init__.py", line 198, in decorator
+    return function(*args, **kwargs)
+  File "/data/s2614855/.envs/intro_project_venv/lib/python3.7/site-packages/tensorflow_datasets/core/dataset_builder.py", line 650, in as_dataset
+    all_ds = tf.nest.map_structure(build_single_dataset, split)
+  File "/software/software/TensorFlow/2.1.0-fosscuda-2019b-Python-3.7.4/lib/python3.7/site-packages/tensorflow_core/python/util/nest.py", line 568, in map_structure
+    structure[0], [func(*x) for x in entries],
+  File "/software/software/TensorFlow/2.1.0-fosscuda-2019b-Python-3.7.4/lib/python3.7/site-packages/tensorflow_core/python/util/nest.py", line 568, in <listcomp>
+    structure[0], [func(*x) for x in entries],
+  File "/data/s2614855/.envs/intro_project_venv/lib/python3.7/site-packages/tensorflow_datasets/core/dataset_builder.py", line 672, in _build_single_dataset
+    read_config=read_config,
+  File "/data/s2614855/.envs/intro_project_venv/lib/python3.7/site-packages/tensorflow_datasets/core/dataset_builder.py", line 1058, in _as_dataset
+    disable_shuffling=self.info.disable_shuffling,
+  File "/data/s2614855/.envs/intro_project_venv/lib/python3.7/site-packages/tensorflow_datasets/core/reader.py", line 346, in read
+    return tf.nest.map_structure(_read_instruction_to_ds, instructions)
+  File "/software/software/TensorFlow/2.1.0-fosscuda-2019b-Python-3.7.4/lib/python3.7/site-packages/tensorflow_core/python/util/nest.py", line 568, in map_structure
+    structure[0], [func(*x) for x in entries],
+  File "/software/software/TensorFlow/2.1.0-fosscuda-2019b-Python-3.7.4/lib/python3.7/site-packages/tensorflow_core/python/util/nest.py", line 568, in <listcomp>
+    structure[0], [func(*x) for x in entries],
+  File "/data/s2614855/.envs/intro_project_venv/lib/python3.7/site-packages/tensorflow_datasets/core/reader.py", line 343, in _read_instruction_to_ds
+    decode_fn=decode_fn,
+  File "/data/s2614855/.envs/intro_project_venv/lib/python3.7/site-packages/tensorflow_datasets/core/reader.py", line 383, in read_files
+    file_format=self._file_format,
+  File "/data/s2614855/.envs/intro_project_venv/lib/python3.7/site-packages/tensorflow_datasets/core/reader.py", line 222, in _read_files
+    deterministic=deterministic,
+TypeError: interleave() got an unexpected keyword argument 'deterministic'
+
+
+###############################################################################
+Peregrine Cluster
+Job 27880863 for user 's2614855'
+Finished at: Mon Dec 12 16:17:16 CET 2022
+
+Job details:
+============
+
+Job ID              : 27880863
+Name                : tfds_generator_gpu.sh
+User                : s2614855
+Partition           : gpu
+Nodes               : pg-gpu04
+Number of Nodes     : 1
+Cores               : 12
+Number of Tasks     : 1
+State               : COMPLETED
+Submit              : 2022-12-11T22:37:49
+Start               : 2022-12-12T16:16:25
+End                 : 2022-12-12T16:17:16
+Reserved walltime   : 2-22:00:00
+Used walltime       :   00:00:51
+Used CPU time       :   00:00:13 (efficiency:  2.25%)
+% User (Computation): 63.65%
+% System (I/O)      : 36.35%
+Mem reserved        : 80G
+Max Mem (Node/step) : 236.20M (pg-gpu04, per node)
+Full Max Mem usage  : 236.20M
+Total Disk Read     : 3.05M
+Total Disk Write    : 107.18K
+Average GPU usage   : 21.5% (pg-gpu04)
+
+
+Acknowledgements:
+=================
+
+Please see this page for information about acknowledging Peregrine in your publications:
+
+https://wiki.hpc.rug.nl/peregrine/introduction/scientific_output
+
+################################################################################
